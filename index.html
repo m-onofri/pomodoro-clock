@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Pomodoro Clock</title>
+        <link href="https://fonts.googleapis.com/css?family=Righteous&display=swap" rel="stylesheet"> 
+        <link rel="stylesheet" href="./static/css/style.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" type="text/javascript"></script>
+    </head>
+    <body>
+        <audio id="beep" src="https://goo.gl/65cBl1" type="audio/mpeg"></audio>
+        <div id="app">
+            <div id="main-content">
+                <div id="setup">
+                    <div id="break">
+                        <div id="break-label" class="label"><h3>Break Length</h3></div>
+                        <div id="break-content">
+                            <div id="break-length">5</div>
+                            <div class="setup-controller" id="break-controller">
+                                <div id="break-increment" class="btn"><i class="fa fa-arrow-up fa-2x"></i></div>
+                                <div id="break-decrement" class="btn"><i class="fa fa-arrow-down fa-2x"></i></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="session">
+                        <div id="session-label" class="label"><h3>Session Length</h3></div>
+                        <div id="session-content">
+                            <div class="setup-controller" id="session-controller">
+                                <div id="session-increment" class="btn"><i class="fa fa-arrow-up fa-2x"></i></div>
+                                <div id="session-decrement" class="btn"><i class="fa fa-arrow-down fa-2x"></i></div>
+                            </div>
+                            <div id="session-length">25</div>
+                        </div>
+                    </div>
+                </div>
+                <div id="timer">
+                    <div class="label"><h3 id="timer-label">Session</h3></div>
+                    <div id="time-left">25:00</div>
+                </div>
+                <div id="controller">
+                    <div class="label btn" id="start_stop">
+                        <i class="fa fa-play"></i>
+                        <i class="fa fa-pause"></i>
+                    </div>
+                    <div class="label btn" id="reset"><i class="fa fa-refresh"></i></div>
+                </div>
+            </div>
+        </div>
+        <script src="./static/js/script.js"></script>
+    </body>
+</html>
